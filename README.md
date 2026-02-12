@@ -6,7 +6,7 @@ Esta aplicación es una herramienta interactiva desarrollada por Carlos Rodrígu
 ## Funcionalidades
 
 *   **Vista de Calendario:** Visualización clara de un Sprint de 3 semanas.
-*   **Gestión de Tareas:** Tarjetas diarias que indican la actividad principal, el tipo de trabajo (Diseño, Desarrollo, Pruebas, Revisión) y el responsable.
+*   **Gestión de Tareas:** Tarjetas diarias que indican la actividad, el tipo de trabajo (Diseño, Desarrollo, Pruebas, Revisión), el responsable y los recursos necesarios.
 *   **Reuniones Ágiles:** Indicadores visuales para eventos de Scrum como *Sprint Planning*, *Daily Scrum* y *Sprint Review/Retrospective*.
 *   **Detalle de Tareas:** Al hacer clic en una tarjeta, se despliega un modal con información detallada:
     *   Historia de Usuario.
@@ -14,18 +14,18 @@ Esta aplicación es una herramienta interactiva desarrollada por Carlos Rodrígu
     *   Objetivo Técnico.
     *   Puntos de Historia.
     *   Valor del negocio.
-*   **Indicador "Hoy":** Resaltado visual y animación para identificar el día actual dentro del sprint.
+    *   Responsable.
+    *   Herramientas (Recursos necesarios)
+*   **Indicador "Hoy":** Resaltado visual y animación para identificar el día actual dentro del sprint, incluyendo fines de semana no laborables.
 
 
 ## Leyenda de Colores
 
 Las tarjetas están codificadas por colores para identificar rápidamente el tipo de actividad:
 
-*   **Azul (Design):** Actividades de diseño, prototipado y UX/UI.
+*   **Azul (Design):** Actividades de diseño y arquitectura.
 *   **Verde (Dev):** Desarrollo de código, backend, frontend y configuración.
 *   **Morado (Test):** Pruebas de calidad, seguridad e integridad.
-*   **Ámbar (Review):** Revisiones con stakeholders y validaciones.
-
 
 ## Tecnologías Utilizadas
 
