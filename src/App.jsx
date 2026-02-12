@@ -10,68 +10,78 @@ const SprintCalendar = () => {
       days: [
         { 
           date: 'Lun 02 Feb', 
-          id: 'PB-01',
-          task: 'Diseñar flujo de login', 
-          hours: 'Día 1/2', 
-          type: 'Design', 
+          id: 'T1.1',
+          task: 'Inicio maquetación Login y Register', 
+          hours: 'Día 1/15', 
+          type: 'Dev', 
           owner: 'Carlos R.C.',
+          role: 'Frontend Dev',
+          tools: 'React, Tailwind CSS',
           activityPoints: 2,
-          userStory: 'Como residente, quiero registrarme e iniciar sesión para acceder de forma segura.',
-          goal: 'Crear los wireframes y prototipos de alta fidelidad para la pantalla de acceso.',
-          value: 'Sin esto, no hay puerta de entrada segura al sistema (Seguridad).',
-          criteria: 'Diseño aprobado en Figma, incluye estados de error y éxito.'
+          userStory: 'PB-01: Como residente, quiero registrarme e iniciar sesión para acceder de forma segura.',
+          goal: 'Crear los componentes de vista base para la autenticación.',
+          value: 'Interfaz necesaria para que el usuario interactúe con el sistema.',
+          criteria: 'Formularios maquetados con componentes controlados (useState).'
         },
         { 
           date: 'Mar 03 Feb', 
-          id: 'PB-01',
-          task: 'Diseñar flujo de login', 
-          hours: 'Día 2/2', 
-          type: 'Design', 
+          id: 'T1.1',
+          task: 'Finalización maquetación UI', 
+          hours: 'Día 2/15', 
+          type: 'Dev', 
           owner: 'Carlos R.C.',
-          activityPoints: 2,
-          userStory: 'Como residente, quiero registrarme e iniciar sesión...',
-          goal: 'Finalizar prototipo y preparar assets para desarrollo.',
-          value: 'Garantiza una experiencia de usuario fluida antes de programar.',
-          criteria: 'Assets exportados y guía de estilos definida.'
+          role: 'Frontend Dev',
+          tools: 'React, Tailwind CSS',
+          activityPoints: 1,
+          userStory: 'PB-01: Como residente, quiero registrarme e iniciar sesión...',
+          goal: 'Aplicar estilos finales y responsivos a los formularios.',
+          value: 'Mejora visual y de experiencia de usuario en móviles y web.',
+          criteria: 'Diseño limpio y ordenado sin errores visuales en 320px+.'
         },
         { 
           date: 'Mié 04 Feb', 
-          id: 'PB-01',
-          task: 'Programar autenticación', 
-          hours: 'Día 1/1', 
+          id: 'T1.2',
+          task: 'Configuración firebase.js e Auth', 
+          hours: 'Día 3/15', 
           type: 'Dev', 
           owner: 'Carlos R.C.',
-          activityPoints: 5,
-          userStory: 'Como residente, quiero registrarme e iniciar sesión...',
-          goal: 'Implementar lógica de Backend (JWT) y formulario Frontend.',
-          value: 'Funcionalidad base para proteger las rutas privadas.',
-          criteria: 'El usuario recibe un token válido al ingresar credenciales correctas.'
+          role: 'Backend Dev',
+          tools: 'Firebase SDK',
+          activityPoints: 3,
+          userStory: 'PB-01: Como residente, quiero registrarme e iniciar sesión...',
+          goal: 'Conectar la app con el proyecto de Firebase Authentication.',
+          value: 'Motor principal de seguridad del sistema.',
+          criteria: 'Creación de usuarios reflejada en la consola de Firebase.'
         },
         { 
           date: 'Jue 05 Feb', 
-          id: 'PB-01',
-          task: 'Pruebas de acceso', 
-          hours: 'Día 1/1', 
-          type: 'Test', 
+          id: 'T1.3',
+          task: 'AuthContext para sesión', 
+          hours: 'Día 4/15', 
+          type: 'Dev', 
           owner: 'Carlos R.C.',
-          activityPoints: 1,
-          userStory: 'Como residente, quiero registrarme e iniciar sesión...',
-          goal: 'Verificar seguridad y manejo de errores (contraseñas incorrectas).',
-          value: 'Asegurar que nadie entre sin permiso.',
-          criteria: '0 vulnerabilidades críticas detectadas en login.'
+          role: 'Full-Stack',
+          tools: 'React Context API',
+          activityPoints: 2,
+          userStory: 'PB-01: Como residente, quiero registrarme e iniciar sesión...',
+          goal: 'Mantener la sesión del usuario activa en toda la app.',
+          value: 'Evita que el usuario tenga que iniciar sesión en cada página.',
+          criteria: 'onAuthStateChanged implementado sin fugas de memoria.'
         },
         { 
           date: 'Vie 06 Feb', 
-          id: 'PB-02',
-          task: 'Definir roles y permisos', 
-          hours: 'Día 1/1', 
-          type: 'Design', 
+          id: 'T1.4',
+          task: 'ProtectedRoute rutas privadas', 
+          hours: 'Día 5/15', 
+          type: 'Dev', 
           owner: 'Carlos R.C.',
-          activityPoints: 1,
-          userStory: 'Como administrador, quiero crear y gestionar usuarios por departamento.',
-          goal: 'Establecer en código la diferencia entre Admin y Residente.',
-          value: 'Evita que residentes accedan a paneles financieros (Control).',
-          criteria: 'Matriz de roles documentada e implementada en middleware.'
+          role: 'Frontend Dev',
+          tools: 'React Router DOM',
+          activityPoints: 2,
+          userStory: 'PB-02: Como administrador, quiero crear y gestionar usuarios...',
+          goal: 'Bloquear acceso a URLs si el usuario no está logueado.',
+          value: 'Seguridad perimetral en el cliente.',
+          criteria: 'Redirección automática a /login si no hay token.'
         },
       ]
     },
@@ -80,68 +90,78 @@ const SprintCalendar = () => {
       days: [
         { 
           date: 'Lun 09 Feb', 
-          id: 'PB-02',
-          task: 'CRUD de usuarios', 
-          hours: 'Día 1/2', 
+          id: 'T1.5',
+          task: 'Inicio formulario perfil Firestore', 
+          hours: 'Día 6/15', 
           type: 'Dev', 
           owner: 'Carlos R.C.',
-          activityPoints: 3,
-          userStory: 'Como administrador, quiero crear y gestionar usuarios...',
-          goal: 'Crear endpoints para Crear, Leer, Actualizar y Borrar usuarios.',
-          value: 'Permite poblar el sistema con los vecinos reales.',
-          criteria: 'API responde correctamente a peticiones POST/GET/PUT/DELETE.'
+          role: 'Frontend Dev',
+          tools: 'React Hook Form',
+          activityPoints: 2,
+          userStory: 'PB-02: Como administrador, quiero crear y gestionar usuarios...',
+          goal: 'Crear UI para capturar nombre, depto y teléfono.',
+          value: 'Permite recolectar datos reales de los vecinos.',
+          criteria: 'Formulario con validación de campos vacíos.'
         },
         { 
           date: 'Mar 10 Feb', 
-          id: 'PB-02',
-          task: 'CRUD de usuarios', 
-          hours: 'Día 2/2', 
-          type: 'Dev', 
+          id: 'T1.5',
+          task: 'Finalización formulario perfil', 
+          hours: 'Día 7/15', 
+          type: 'Design', 
           owner: 'Carlos R.C.',
-          activityPoints: 3,
-          userStory: 'Como administrador, quiero crear y gestionar usuarios...',
-          goal: 'Conectar el Frontend con los endpoints de usuarios.',
-          value: 'Interfaz gráfica para que el admin gestione vecinos sin usar código.',
-          criteria: 'Formularios de alta y edición funcionales.'
+          role: 'Frontend Dev',
+          tools: 'Tailwind CSS',
+          activityPoints: 1,
+          userStory: 'PB-02: Como administrador, quiero crear y gestionar usuarios...',
+          goal: 'Mejorar el layout del perfil de usuario.',
+          value: 'Interfaz intuitiva para actualización de datos.',
+          criteria: 'Estilos aplicados y consistentes con el login.'
         },
         { 
           date: 'Mié 11 Feb', 
-          id: 'PB-02',
-          task: 'Validación c/ admins', 
-          hours: 'Día 1/1', 
-          type: 'Review', 
+          id: 'T1.6',
+          task: 'Actualización datos (setDoc)', 
+          hours: 'Día 8/15', 
+          type: 'Dev', 
           owner: 'Carlos R.C.',
-          activityPoints: 1,
-          userStory: 'Como administrador, quiero crear y gestionar usuarios...',
-          goal: 'Presentar el módulo a un usuario real para feedback.',
-          value: 'Asegurar usabilidad antes de avanzar.',
-          criteria: 'Feedback del admin registrado y tickets de ajuste creados.'
+          role: 'Backend Dev',
+          tools: 'Firestore DB',
+          activityPoints: 3,
+          userStory: 'PB-02: Como administrador, quiero crear y gestionar usuarios...',
+          goal: 'Vincular el formulario Frontend con la escritura en la Nube.',
+          value: 'Persistencia de datos del vecino.',
+          criteria: 'Documentos guardados exitosamente en la colección "users".'
         },
         { 
           date: 'Jue 12 Feb', 
-          id: 'PB-09',
-          task: 'Diseño lógico de BD', 
-          hours: 'Día 1/2', 
+          id: 'T1.7',
+          task: 'Estructura JSON colecciones NoSQL', 
+          hours: 'Día 9/15', 
           type: 'Design', 
           owner: 'Carlos R.C.',
-          activityPoints: 3,
-          userStory: 'Como sistema, quiero almacenar información en una BD segura.',
-          goal: 'Crear el diagrama Entidad-Relación (ER) final.',
-          value: 'Estructura sólida para evitar inconsistencia de datos a futuro.',
-          criteria: 'Diagrama aprobado cubriendo Usuarios, Pagos y Deptos.'
+          role: 'Backend Dev',
+          tools: 'Firebase Console',
+          activityPoints: 2,
+          userStory: 'PB-09: Como sistema, quiero almacenar información en BD...',
+          goal: 'Definir el esquema de datos (Users, Transactions).',
+          value: 'Base sólida para el Sprint 2 (Pagos).',
+          criteria: 'Estructura NoSQL documentada sin redundancias innecesarias.'
         },
         { 
           date: 'Vie 13 Feb', 
-          id: 'PB-09',
-          task: 'Diseño lógico de BD', 
-          hours: 'Día 2/2', 
-          type: 'Design', 
+          id: 'T1.7',
+          task: 'Finalización estructura en BD', 
+          hours: 'Día 10/15', 
+          type: 'Dev', 
           owner: 'Carlos R.C.',
-          activityPoints: 3,
-          userStory: 'Como sistema, quiero almacenar información en una BD segura.',
-          goal: 'Normalización de la base de datos.',
-          value: 'Optimización de consultas y espacio.',
-          criteria: 'Modelo en 3ra Forma Normal.'
+          role: 'Backend Dev',
+          tools: 'Firestore DB',
+          activityPoints: 1,
+          userStory: 'PB-09: Como sistema, quiero almacenar información en BD...',
+          goal: 'Creación de las colecciones vacías en producción.',
+          value: 'Preparación del entorno.',
+          criteria: 'Colecciones visibles en Firebase Console.'
         },
       ]
     },
@@ -150,68 +170,78 @@ const SprintCalendar = () => {
       days: [
         { 
           date: 'Lun 16 Feb', 
-          id: 'PB-09',
-          task: 'Configuración de BD', 
-          hours: 'Día 1/2', 
+          id: 'T1.8',
+          task: 'Reglas de Seguridad Firestore', 
+          hours: 'Día 11/15', 
           type: 'Dev', 
           owner: 'Carlos R.C.',
+          role: 'Backend Dev',
+          tools: 'Firebase Rules',
           activityPoints: 3,
-          userStory: 'Como sistema, quiero almacenar información en una BD segura.',
-          goal: 'Instalación y despliegue del motor de BD (PostgreSQL/MySQL).',
-          value: 'Infraestructura necesaria para persistencia.',
-          criteria: 'Servidor de BD activo y aceptando conexiones.'
+          userStory: 'PB-09: Como sistema, quiero almacenar información en BD...',
+          goal: 'Escribir reglas para evitar lectura pública de datos.',
+          value: 'Cumplimiento de privacidad y protección de datos.',
+          criteria: 'Solo usuarios autenticados pueden leer/escribir.'
         },
         { 
           date: 'Mar 17 Feb', 
-          id: 'PB-09',
-          task: 'Configuración de BD', 
-          hours: 'Día 2/2', 
-          type: 'Dev', 
+          id: 'T1.8',
+          task: 'Pruebas Reglas Seguridad', 
+          hours: 'Día 12/15', 
+          type: 'Test', 
           owner: 'Carlos R.C.',
-          activityPoints: 3,
-          userStory: 'Como sistema, quiero almacenar información en una BD segura.',
-          goal: 'Creación de scripts de migración iniciales.',
-          value: 'Versionamiento de la estructura de datos.',
-          criteria: 'Tablas creadas correctamente mediante scripts.'
+          role: 'Backend Dev',
+          tools: 'Firebase Simulator',
+          activityPoints: 2,
+          userStory: 'PB-09: Como sistema, quiero almacenar información en BD...',
+          goal: 'Verificar vulnerabilidades en las reglas.',
+          value: 'Garantía contra inyecciones o robo de datos masivo.',
+          criteria: 'Simulador rechaza peticiones anónimas.'
         },
         { 
           date: 'Mié 18 Feb', 
-          id: 'PB-09',
-          task: 'Pruebas de integridad', 
-          hours: 'Día 1/1', 
-          type: 'Test', 
+          id: 'T1.9',
+          task: 'Carga de Seeders en BD', 
+          hours: 'Día 13/15', 
+          type: 'Dev', 
           owner: 'Carlos R.C.',
+          role: 'Backend Dev',
+          tools: 'Script Node.js',
           activityPoints: 2,
-          userStory: 'Como sistema, quiero almacenar información en una BD segura.',
-          goal: 'Verificar relaciones y constraints (Foreign Keys).',
-          value: 'Evitar datos huérfanos o corruptos.',
-          criteria: 'No se permiten registros sin relaciones obligatorias.'
+          userStory: 'PB-09: Como sistema, quiero almacenar información en BD...',
+          goal: 'Poblar la base de datos con usuarios falsos para pruebas.',
+          value: 'Facilita la evaluación del sistema sin registros manuales.',
+          criteria: 'Script inserta 10 usuarios de prueba automáticamente.'
         },
         { 
           date: 'Jue 19 Feb', 
-          id: 'PB-10',
-          task: 'Contraste y tipografía', 
-          hours: 'Día 1/1', 
+          id: 'T1.10',
+          task: 'Etiquetas semánticas y ARIA', 
+          hours: 'Día 14/15', 
           type: 'Design', 
           owner: 'Carlos R.C.',
+          role: 'Frontend Dev',
+          tools: 'React, Lighthouse',
           activityPoints: 1,
-          userStory: 'Como usuario, quiero un sistema accesible conforme a WCAG.',
-          goal: 'Ajustar paleta de colores y fuentes legibles.',
-          value: 'Cumplimiento normativo e inclusión (Usuarios mayores).',
-          criteria: 'Pass en herramientas de validación de contraste (AA).'
+          userStory: 'PB-10: Como usuario, quiero un sistema accesible conforme a WCAG.',
+          goal: 'Hacer que lectores de pantalla entiendan el sitio.',
+          value: 'Inclusión de usuarios con discapacidades visuales.',
+          criteria: 'Score 90+ en accesibilidad en Lighthouse.'
         },
         { 
           date: 'Vie 20 Feb', 
-          id: 'PB-10',
-          task: 'Navegación simple', 
-          hours: 'Día 1/1', 
-          type: 'Design', 
+          id: 'T1.11',
+          task: 'Navegación por teclado UI', 
+          hours: 'Día 15/15', 
+          type: 'Test', 
           owner: 'Carlos R.C.',
-          activityPoints: 1,
-          userStory: 'Como usuario, quiero un sistema accesible conforme a WCAG.',
-          goal: 'Habilitar navegación completa vía teclado.',
-          value: 'Accesibilidad motriz.',
-          criteria: 'Todos los elementos interactivos tienen foco visible.'
+          role: 'Frontend Dev',
+          tools: 'Teclado / Navegador',
+          activityPoints: 2,
+          userStory: 'PB-10: Como usuario, quiero un sistema accesible...',
+          goal: 'Garantizar flujo Tab/Enter en todos los botones e inputs.',
+          value: 'Accesibilidad para problemas motrices.',
+          criteria: 'Se puede realizar un registro completo sin usar el mouse.'
         },
       ]
     }
@@ -280,7 +310,7 @@ const SprintCalendar = () => {
               Calendarización: Sprint 1
             </h1>
             <p className="text-gray-600 mt-2 text-lg">
-              <strong>Objetivo:</strong> Base del Sistema - MVP técnico funcional
+              <strong>Objetivo:</strong> Arquitectura Base y Seguridad (React + Firebase)
             </p>
           </div>
           <div className="mt-4 md:mt-0 flex gap-6 text-sm text-gray-600 bg-gray-50 px-4 py-2 rounded-lg border border-gray-100">
@@ -317,9 +347,11 @@ const SprintCalendar = () => {
                           </div>
                         </div>
                       )}
+                      
+                      {/* TARJETA DE ACTIVIDAD (Ajustada a h-48 para acomodar más info visualmente igual) */}
                       <div 
                         onClick={() => setSelectedTask(day)}
-                        className={`cursor-pointer transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg p-4 rounded-xl border-l-4 flex flex-col justify-between h-40 ${getTypeColor(day.type)} ${isDayToday ? 'ring-4 ring-red-500 ring-offset-2 relative animate-jump' : ''}`}
+                        className={`cursor-pointer transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg p-4 rounded-xl border-l-4 flex flex-col justify-between h-48 ${getTypeColor(day.type)} ${isDayToday ? 'ring-4 ring-red-500 ring-offset-2 relative animate-jump' : ''}`}
                       >
                         {isDayToday && (
                           <span className="absolute -top-3 -right-2 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-sm z-10">
@@ -331,13 +363,30 @@ const SprintCalendar = () => {
                             <span className="font-bold text-sm opacity-70">{day.date}</span>
                             <span className="text-[10px] uppercase font-bold tracking-wider opacity-60 border px-1 rounded">{day.id}</span>
                           </div>
-                          <div className="font-bold text-lg leading-tight mb-1">{day.task}</div>
+                          
+                          {/* Título de la tarea */}
+                          <div className="font-bold text-[15px] leading-tight mb-2 line-clamp-2">{day.task}</div>
+                          
+                          {/* NUEVO: Información de Responsable y Recursos */}
+                          <div className="text-[10px] opacity-80 space-y-1 mt-1 font-medium">
+                            <div className="flex items-center gap-1.5 truncate">
+                              <User size={12} className="opacity-60"/>
+                              {day.owner} <span className="opacity-60">({day.role})</span>
+                            </div>
+                            <div className="flex items-center gap-1.5 truncate">
+                              <Zap size={12} className="opacity-60"/> <p className="opacity-80">Recursos:</p>
+                              {day.tools}
+                            </div>
+                          </div>
                         </div>
-                        <div className="flex justify-between items-center text-xs font-medium opacity-80 mt-2">
+
+                        {/* Pie de tarjeta original */}
+                        <div className="flex justify-between items-center text-xs font-medium opacity-80 mt-2 pt-2 border-t border-black/5">
                           <span className="flex items-center gap-1"><Clock size={12}/> {day.hours}</span>
                           <span className="bg-white/60 px-2 py-1 rounded shadow-sm">{day.type}</span>
                         </div>
                       </div>
+
                       {isLastGlobal && (
                         <div className="bg-white p-2 rounded-lg border border-gray-200 shadow-sm flex justify-between items-center h-14">
                           <span className="text-xs font-bold text-gray-500">{day.date}</span>
@@ -372,10 +421,9 @@ const SprintCalendar = () => {
         </div>
 
         <div className="mt-8 flex justify-center gap-6 text-sm text-gray-500">
-          <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-blue-400"></span> Diseño</span>
-          <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-emerald-400"></span> Desarrollo</span>
-          <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-purple-400"></span> Pruebas</span>
-          <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-amber-400"></span> Revisión</span>
+          <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-blue-400"></span> Diseño / Arquitectura</span>
+          <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-emerald-400"></span> Desarrollo (Código)</span>
+          <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-purple-400"></span> Pruebas (QA)</span>
         </div>
       </div>
 
@@ -393,7 +441,7 @@ const SprintCalendar = () => {
                   )}
                 </div>
                 <h2 className="text-2xl font-bold">{selectedTask.task}</h2>
-                <p className="opacity-90 text-sm mt-1">{selectedTask.owner} • {selectedTask.type}</p>
+                <p className="opacity-90 text-sm mt-1">{selectedTask.owner} ({selectedTask.role}) • Herramientas: {selectedTask.tools}</p>
               </div>
               <button 
                 onClick={() => setSelectedTask(null)}
@@ -422,7 +470,7 @@ const SprintCalendar = () => {
 
               <div>
                 <h4 className="flex items-center gap-2 text-gray-900 font-bold mb-2">
-                  <User size={18} className="text-gray-400"/> Historia de Usuario
+                  <User size={18} className="text-gray-400"/> Historia de Usuario Relacionada
                 </h4>
                 <div className="bg-blue-50 text-blue-900 p-4 rounded-lg italic text-sm border-l-4 border-blue-400">
                   "{selectedTask.userStory}"
@@ -432,14 +480,14 @@ const SprintCalendar = () => {
               <div className="space-y-4">
                 <div>
                   <h4 className="flex items-center gap-2 text-gray-900 font-bold mb-1 text-sm">
-                    <FileText size={16} className="text-gray-400"/> ¿Para qué? (Valor)
+                    <FileText size={16} className="text-gray-400"/> ¿Para qué? (Valor entregado)
                   </h4>
                   <p className="text-gray-600 text-sm">{selectedTask.value}</p>
                 </div>
                 
                 <div>
                   <h4 className="flex items-center gap-2 text-gray-900 font-bold mb-2 text-sm">
-                    <ShieldCheck size={16} className="text-gray-400"/> Condiciones de Aceptación
+                    <ShieldCheck size={16} className="text-gray-400"/> Condiciones de Aceptación (DoD)
                   </h4>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2 text-sm text-gray-700">
